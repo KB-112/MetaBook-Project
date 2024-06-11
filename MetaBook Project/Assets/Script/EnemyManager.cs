@@ -6,7 +6,10 @@ public class EnemyManager : MonoBehaviour
 {
     private void Start()
     {
-        StartCoroutine(InstantiateEnemy());
+        GameManager.Instance.menuComponent.buttons[0].onClick.AddListener(delegate {
+
+            StartCoroutine(InstantiateEnemy());  });
+        
     }
     public EnemyComponents Enemy()
     {

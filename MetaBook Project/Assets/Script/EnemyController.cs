@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
-   
+
 
 
 
@@ -14,14 +14,16 @@ public class EnemyController : MonoBehaviour
 
     void Update()
     {
-     
-        transform.rotation = Quaternion.Slerp(transform.rotation
-                                              , Quaternion.LookRotation(Player().player.transform.position - transform.position)
-                                              , Enemy().enemyRotSpeed * Time.deltaTime);
+        Vector3 targetPosition = Player().player.transform.position;
+        targetPosition.y = transform.position.y; 
 
-       
+        transform.rotation = Quaternion.Slerp(transform.rotation,
+                                              Quaternion.LookRotation(targetPosition - transform.position),
+                                              Enemy().enemyRotSpeed * Time.deltaTime);
+
         transform.position += transform.forward * Enemy().enemySpeed * Time.deltaTime;
     }
+
 
     public PlayerComponents Player()
     {
