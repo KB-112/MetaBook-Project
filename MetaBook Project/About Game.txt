@@ -1,0 +1,2 @@
+You Have To Dodge Enemy under 2 min otherwise Gameover
+Every 10 - 20 Seonds enemy increases
