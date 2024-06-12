@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5922497964981318438}
   - component: {fileID: 5922497964981318439}
   - component: {fileID: 5922497964981318436}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HeadSet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 5922497965154462793}
   - component: {fileID: 1032214047}
   - component: {fileID: 1032214042}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Enemy
   m_TagString: DamageDealer
   m_Icon: {fileID: 0}
